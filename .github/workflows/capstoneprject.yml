@@ -38,9 +38,9 @@ jobs:
          password: ${{ secrets.PASSWORD }}
          port: ${{ secrets.PORT }}
          script: |
-           git clone https://github.com/Sonal0409/DevOps-Capstone-Project.git
-           cd MavenBuild-SL
+           git clone https://github.com/ksharawi/DevOps-Capstone-Project.git
+           cd DevOps-Capestone-Project
            helm list -A
-           helm install mavenbuild-dev ./webapp
+           helm install webapp-deploy ./webapp
            helm list -A
            kubectl get all
