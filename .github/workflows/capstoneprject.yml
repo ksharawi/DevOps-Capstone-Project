@@ -38,7 +38,7 @@ jobs:
          password: ${{ secrets.PASSWORD }}
          port: ${{ secrets.PORT }}
          script: |
-           git clone https://github.com/ksharawi/DevOps-Capstone-Project.git
+           git clone https://github.com/ksharawi/DevOps-Capstone-Project
            cd DevOps-Capestone-Project
            helm list -A
            helm install webapp-deploy ./webapp
