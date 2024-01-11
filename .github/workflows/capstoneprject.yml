@@ -3,7 +3,7 @@ on:
  push:
 jobs:
  endproject:
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: Checkout
       uses: action/checkout@v3
